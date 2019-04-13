@@ -1,6 +1,6 @@
 # Social network implemented by AVL tree
 
-DSA project for school
+School project (Data structures and algorithms) using AVL tree structure.
 
 ## Technology stack
 
@@ -19,12 +19,15 @@ DSA project for school
 
 ```c
 /*AVL tree node*/
-typedef struct node {
-    int key;
-    struct node *left;
-    struct node *right;
+typedef struct page {
+    char *name; //nazov stranky
+    struct page *subname; // mena uzivatelov ktori likeli stranku, teda dalsi AVL strom 
+    struct page *left;
+    struct page *right;
     int height;
-}node;
+}page;
 ```
 
+## Licence
 
+MIT
